@@ -1,0 +1,50 @@
+[33mcommit da0433ac23fa23653fba07a267b5b4a71cfc2c97[m[33m ([m[1;36mHEAD -> [m[1;32mdev1[m[33m, [m[1;31morigin/master[m[33m)[m
+Merge: dcee28c 975781e
+Author: Lgsalgado <38463157+Lgsalgado@users.noreply.github.com>
+Date:   Tue Jul 7 12:40:17 2020 -0500
+
+    Merge pull request #8 from ANP-2020A/4-seeding-article
+    
+    #4 #5 seeding tables
+
+[33mcommit 975781e9be2ad98b4c50806ddb672550cc256b94[m[33m ([m[1;31morigin/4-seeding-article[m[33m, [m[1;32m4-seeding-article[m[33m)[m
+Author: lgSalgado <luis.salgado@epn.edu.ec>
+Date:   Tue Jul 7 12:35:08 2020 -0500
+
+    #4 #5 seeding tables
+
+[33mcommit dcee28ca0aef60c0405ee30e3eeddbfcb5ed58e1[m
+Merge: ab590c0 d30df87
+Author: Lgsalgado <38463157+Lgsalgado@users.noreply.github.com>
+Date:   Tue Jul 7 08:54:49 2020 -0500
+
+    Merge pull request #5 from ANP-2020A/3-modelo-article
+    
+    #3 Modelo Article y migracion
+
+[33mcommit d30df871569a246ddab1c75695dadd14b202eb4b[m[33m ([m[1;31morigin/3-modelo-article[m[33m, [m[1;32m3-modelo-article[m[33m)[m
+Author: lgSalgado <luis.salgado@epn.edu.ec>
+Date:   Tue Jul 7 08:41:56 2020 -0500
+
+    #3 Modelo Article y migracion
+
+[33mcommit ab590c0c8a6c0db3a9523a8c0ace7aa766a3d704[m
+Merge: ee940bb dc585b9
+Author: Lgsalgado <38463157+Lgsalgado@users.noreply.github.com>
+Date:   Thu Jun 25 12:02:38 2020 -0500
+
+    Merge pull request #2 from ANP-2020A/1-configuracion
+    
+    #1 Configuración Inicial
+
+[33mcommit dc585b921823a780e486b96bfc940bd6debed25d[m[33m ([m[1;31morigin/1-configuracion[m[33m, [m[1;32m1-configuracion[m[33m)[m
+Author: lgSalgado <luis.salgado@epn.edu.ec>
+Date:   Thu Jun 25 11:50:13 2020 -0500
+
+    #1 Configuración Inicial
+
+[33mcommit ee940bba36be66f6014aa8c8c66e4ad9b06a80e5[m[33m ([m[1;31morigin/dev1[m[33m, [m[1;32mmaster[m[33m)[m
+Author: lgSalgado <luis.salgado@epn.edu.ec>
+Date:   Thu Jun 18 13:15:17 2020 -0500
+
+    Inicializacion del proyecto
