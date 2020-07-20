@@ -37,6 +37,19 @@ class User extends Authenticatable  implements JWTSubject
     {
         return [];
     }
+    public function articles()
+    {
+        return $this->hasMany('App\Article');
+    }
+    public function comments()
+    {
+        return $this->hasMany('App\Comment');
+    }
+    public function categories()
+    {
+        return $this->belongsToMany('App\Category')->as('subscriptions')->withTimestamps();
+    }
+
     /**
      * The attributes that should be cast to native types.
      *
@@ -45,4 +58,7 @@ class User extends Authenticatable  implements JWTSubject
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
 }
+
