@@ -24,4 +24,8 @@ class Comment extends Model
     {
         return $this->belongsTo('App\Article');
     }
+    public function courses()
+    {
+        return $this->hasMany('App\Course');
+    }
 }

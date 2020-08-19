@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Article;
 use App\Http\Resources\Article as ArticleResource;
 use App\Http\Resources\ArticleCollection;
+use Illuminate\Support\Facades\Storage;
 use phpDocumentor\Reflection\Types\Self_;
 
 class ArticleController extends Controller
@@ -19,6 +20,10 @@ class ArticleController extends Controller
         'required' => 'El campo :attribute es obligatorio.',
         'body.required' => 'El body no es válido.'
     ];
+    public function image(Article $article)
+    {
+        return response()->download(public_path(Storage::url($article->image)), $article->title);
+    }
     public function index()
     {
         return new ArticleCollection(Article::paginate());
@@ -32,11 +37,16 @@ class ArticleController extends Controller
         $request->validate([
             'title' => 'required|string|unique:articles|max:255',
             'body' => 'required',
-            'category_id'=>'required|exists:categories,id'
+            'category_id'=>'required|exists:categories,id',
+            'image' => 'required|image|dimensions:min_width=200,min_height=200',
         ], self::$messages);
 
-        $article = Article::create($request->all());
-        return response()->json($article, 201);
+        //$article = Article::create($request->all());
+        $article = new Article($request->all());
+        $path = $request->image->store('public/articles');
+        $article->image = $path;
+        $article->save();
+        return response()->json(new ArticleResource($article), 201);
     }
     public function update(Request $request, Article $article)
     {
